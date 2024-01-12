@@ -63,7 +63,7 @@ function login() {
 
     if (user) {
         localStorage.setItem('sessionUsername', user.name);
-        location.replace('/home.html');
+        location.replace('home.html');
     } else {
         document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">Incorrect email or password</span>';
     }
@@ -76,5 +76,5 @@ if (sessionUsername) {
     var welcomeUsername = document.getElementById('username');
     welcomeUsername.textContent = 'Welcome ' + sessionUsername;
 } else {
-  //  location.replace('/index.html');}
+    location.replace('index.html');}
 
