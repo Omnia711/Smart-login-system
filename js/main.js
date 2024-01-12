@@ -76,5 +76,5 @@ if (sessionUsername) {
     var welcomeUsername = document.getElementById('username');
     welcomeUsername.textContent = 'Welcome ' + sessionUsername;
 } else {
-    location.replace('/index.html');}
+  //  location.replace('/index.html');}
 
